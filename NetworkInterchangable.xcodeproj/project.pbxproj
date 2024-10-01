@@ -11,6 +11,10 @@
 		1EEB2A382CABCFA900035258 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB2A372CABCFA900035258 /* ContentView.swift */; };
 		1EEB2A3A2CABCFAB00035258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEB2A392CABCFAB00035258 /* Assets.xcassets */; };
 		1EEB2A3D2CABCFAB00035258 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEB2A3C2CABCFAB00035258 /* Preview Assets.xcassets */; };
+		1EEB2A452CABCFEB00035258 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB2A442CABCFEB00035258 /* UserModel.swift */; };
+		1EEB2A482CABD00A00035258 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB2A472CABD00A00035258 /* WebService.swift */; };
+		1EEB2A4B2CAC30A300035258 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB2A4A2CAC30A300035258 /* UserViewModel.swift */; };
+		1EEB2A4E2CAC423F00035258 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB2A4D2CAC423F00035258 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		1EEB2A372CABCFA900035258 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1EEB2A392CABCFAB00035258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EEB2A3C2CABCFAB00035258 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1EEB2A442CABCFEB00035258 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1EEB2A472CABD00A00035258 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		1EEB2A4A2CAC30A300035258 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		1EEB2A4D2CAC423F00035258 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,10 @@
 		1EEB2A342CABCFA900035258 /* NetworkInterchangable */ = {
 			isa = PBXGroup;
 			children = (
+				1EEB2A4C2CAC41F900035258 /* Constants */,
+				1EEB2A462CABCFF100035258 /* Service */,
+				1EEB2A492CABD01000035258 /* ViewModel */,
+				1EEB2A432CABCFC400035258 /* Model */,
 				1EEB2A352CABCFA900035258 /* NetworkInterchangableApp.swift */,
 				1EEB2A372CABCFA900035258 /* ContentView.swift */,
 				1EEB2A392CABCFAB00035258 /* Assets.xcassets */,
@@ -65,6 +77,38 @@
 				1EEB2A3C2CABCFAB00035258 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1EEB2A432CABCFC400035258 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1EEB2A442CABCFEB00035258 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1EEB2A462CABCFF100035258 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1EEB2A472CABD00A00035258 /* WebService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1EEB2A492CABD01000035258 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1EEB2A4A2CAC30A300035258 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1EEB2A4C2CAC41F900035258 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1EEB2A4D2CAC423F00035258 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +183,10 @@
 			files = (
 				1EEB2A382CABCFA900035258 /* ContentView.swift in Sources */,
 				1EEB2A362CABCFA900035258 /* NetworkInterchangableApp.swift in Sources */,
+				1EEB2A482CABD00A00035258 /* WebService.swift in Sources */,
+				1EEB2A4B2CAC30A300035258 /* UserViewModel.swift in Sources */,
+				1EEB2A452CABCFEB00035258 /* UserModel.swift in Sources */,
+				1EEB2A4E2CAC423F00035258 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
