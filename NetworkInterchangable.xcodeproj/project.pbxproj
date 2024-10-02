@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E34DCAD2CAC8E24008012D0 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E34DCAC2CAC8E24008012D0 /* users.json */; };
+		1E34DCAF2CAC8E55008012D0 /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DCAE2CAC8E55008012D0 /* LocalService.swift */; };
+		1E34DCB12CAC922C008012D0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E34DCB02CAC922C008012D0 /* NetworkService.swift */; };
 		1EEB2A362CABCFA900035258 /* NetworkInterchangableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB2A352CABCFA900035258 /* NetworkInterchangableApp.swift */; };
 		1EEB2A382CABCFA900035258 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB2A372CABCFA900035258 /* ContentView.swift */; };
 		1EEB2A3A2CABCFAB00035258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEB2A392CABCFAB00035258 /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E34DCAC2CAC8E24008012D0 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		1E34DCAE2CAC8E55008012D0 /* LocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
+		1E34DCB02CAC922C008012D0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		1EEB2A322CABCFA900035258 /* NetworkInterchangable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkInterchangable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEB2A352CABCFA900035258 /* NetworkInterchangableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterchangableApp.swift; sourceTree = "<group>"; };
 		1EEB2A372CABCFA900035258 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +49,7 @@
 		1EEB2A292CABCFA900035258 = {
 			isa = PBXGroup;
 			children = (
+				1E34DCAC2CAC8E24008012D0 /* users.json */,
 				1EEB2A342CABCFA900035258 /* NetworkInterchangable */,
 				1EEB2A332CABCFA900035258 /* Products */,
 			);
@@ -91,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				1EEB2A472CABD00A00035258 /* WebService.swift */,
+				1E34DCAE2CAC8E55008012D0 /* LocalService.swift */,
+				1E34DCB02CAC922C008012D0 /* NetworkService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -169,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E34DCAD2CAC8E24008012D0 /* users.json in Resources */,
 				1EEB2A3D2CABCFAB00035258 /* Preview Assets.xcassets in Resources */,
 				1EEB2A3A2CABCFAB00035258 /* Assets.xcassets in Resources */,
 			);
@@ -183,9 +193,11 @@
 			files = (
 				1EEB2A382CABCFA900035258 /* ContentView.swift in Sources */,
 				1EEB2A362CABCFA900035258 /* NetworkInterchangableApp.swift in Sources */,
+				1E34DCB12CAC922C008012D0 /* NetworkService.swift in Sources */,
 				1EEB2A482CABD00A00035258 /* WebService.swift in Sources */,
 				1EEB2A4B2CAC30A300035258 /* UserViewModel.swift in Sources */,
 				1EEB2A452CABCFEB00035258 /* UserModel.swift in Sources */,
+				1E34DCAF2CAC8E55008012D0 /* LocalService.swift in Sources */,
 				1EEB2A4E2CAC423F00035258 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

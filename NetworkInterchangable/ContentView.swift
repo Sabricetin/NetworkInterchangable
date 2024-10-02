@@ -13,14 +13,12 @@ struct ContentView: View {
     @ObservedObject var userListViewModel :
     UserListViewModel
     init() {
-        self.userListViewModel = UserListViewModel()
+        self.userListViewModel = UserListViewModel(service: LocalService())
     }
     
     var body: some View {
-            
-      
-        List { 
-            
+        List {
+
             ForEach(Array(userListViewModel.userlist.enumerated()), id: \.offset) { index, user in
                 VStack {
                     Text("1 . \(user.name)")
@@ -45,7 +43,6 @@ struct ContentView: View {
                         .font(.bold(Font.headline)())
                         .foregroundColor(.purple)
                         .frame(maxWidth: .infinity , alignment: .leading)
-                        
                 }
 
             } .padding()
@@ -55,8 +52,7 @@ struct ContentView: View {
         }  .listStyle(.plain)
             .scrollContentBackground(.hidden)
             .background(Color.black)
-        
-        .task {
+            .task {
             await userListViewModel.downloadUSers()
         }
     } 
